@@ -10,6 +10,9 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore . && prettier --check **/*.{js,ts,tsx}",
+    "lint:fix": "eslint --ext .js,.ts --ignore-path .gitignore . --fix && prettier --write **/*.{js,ts,tsx}",
+    "typecheck": "tsc --noEmit",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"
   },
@@ -37,12 +40,72 @@
       "last 1 safari version"
     ]
   },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "prettier"
+    ],
+    "plugins": [
+      "@typescript-eslint",
+      "react"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "react/prop-types": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.js"
+        ],
+        "rules": {
+          "@typescript-eslint/no-var-requires": [
+            "off"
+          ]
+        }
+      }
+    ]
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none"
+  },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.0.0-beta.1",
     "@tsconfig/docusaurus": "^1.0.2",
     "@types/react": "^17.0.11",
     "@types/react-helmet": "^6.1.1",
     "@types/react-router-dom": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.24.0",
+    "prettier": "^2.3.1",
     "typescript": "^4.3.4"
   }
 }
