@@ -9,14 +9,14 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'ZentoReimei',
   projectName: 'reimei.io',
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: '全都黎明 (ぜんとれいめい)',
       logo: {
-        alt: 'My Site Logo',
+        alt: '全都黎明 (ぜんとれいめい)',
         src: 'img/logo.svg'
       },
       items: [
@@ -24,11 +24,11 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial'
+          label: 'ドキュメント'
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/blog', label: 'ブログ', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/ZentoReimei/reimei.io',
           label: 'GitHub',
           position: 'right'
         }
@@ -41,7 +41,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'ドキュメント',
               to: '/docs/intro'
             }
           ]
@@ -50,16 +50,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus'
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus'
-            },
-            {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus'
+              href: 'https://twitter.com/ZentoReimei'
             }
           ]
         },
@@ -67,21 +59,25 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
+              label: 'ブログ',
               to: '/blog'
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus'
+              href: 'https://github.com/ZentoReimei/reimei.io'
             }
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
+      copyright: `Copyright © ${new Date().getFullYear()} ZentoReimei.`
     },
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme
+    },
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true
     },
     gtag: {
       trackingID: process.env.TRACKING_ID || 'G-XXXXXX'
