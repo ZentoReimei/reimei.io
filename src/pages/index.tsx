@@ -1,23 +1,16 @@
 import React from 'react'
 import clsx from 'clsx'
 import Layout from '@theme/Layout'
-import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import styles from './index.module.css'
 import HomepageFeatures from '../components/HomepageFeatures'
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext()
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+        <h1 className={styles.heroTitle}>明日が変わっていく東京を作る</h1>
+        <p className={styles.subTitle}>行動しよう、新たな夜明けを見るために</p>
       </div>
     </header>
   )

@@ -14,10 +14,9 @@ module.exports = {
   projectName: 'reimei.io',
   themeConfig: {
     navbar: {
-      title: '全都黎明 (ぜんとれいめい)',
       logo: {
         alt: '全都黎明 (ぜんとれいめい)',
-        src: 'img/logo.svg'
+        src: 'img/logo.png'
       },
       items: [
         {
