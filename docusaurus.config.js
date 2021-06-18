@@ -82,6 +82,9 @@ module.exports = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme
+    },
+    gtag: {
+      trackingID: process.env.TRACKING_ID || 'G-XXXXXX'
     }
   },
   presets: [
