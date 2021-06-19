@@ -13,10 +13,22 @@ module.exports = {
   organizationName: 'ZentoReimei',
   projectName: 'reimei.io',
   themeConfig: {
+    image: 'img/ogp.png',
+    metadatas: [
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        name: 'description',
+        content: '全都黎明 (ぜんとれいめい)'
+      },
+      {
+        property: 'og:description',
+        content: '全都黎明 (ぜんとれいめい)'
+      }
+    ],
     navbar: {
       logo: {
         alt: '全都黎明 (ぜんとれいめい)',
-        src: 'img/logo.png'
+        src: 'img/logo.svg'
       },
       items: [
         {
