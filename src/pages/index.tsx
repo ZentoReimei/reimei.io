@@ -8,7 +8,8 @@ import HomepageFeatures from '../components/HomepageFeatures'
 function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
-      <div className="container">
+      <div className={styles.background} />
+      <div className={clsx('container', styles.container)}>
         <h1 className={styles.heroTitle}>明日が変わっていく東京を作る</h1>
         <p className={styles.subTitle}>行動しよう、新たな夜明けを見るために</p>
       </div>

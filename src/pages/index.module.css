@@ -16,6 +16,20 @@
   background: linear-gradient(to right, #000046, #1cb5e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: center/cover url(/img/tokyo.jpg);
+  opacity: 0.3;
+}
+
+.container {
+  position: relative;
+}
+
 .heroTitle {
   color: #fff;
   font-size: 64px;
