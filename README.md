@@ -1,4 +1,4 @@
-# Website
+# 全都黎明公式サイト
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 

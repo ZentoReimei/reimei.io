@@ -6,14 +6,14 @@
  */
 
 .heroBanner {
-  min-height: 80vh;
-  padding: 4rem 0;
+  min-height: 100vh;
+  padding-bottom: 200px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: #000046;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #000046, #1cb5e0);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #000046, #1cb5e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .background {
@@ -22,7 +22,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: center/cover url(/img/tokyo.jpg);
+  background: center/cover url(/img/hero.jpg);
   opacity: 0.3;
 }
 
@@ -35,7 +35,19 @@
   font-size: 64px;
 }
 
+.strongNumber {
+  font-size: 88px;
+  color: #ff0;
+}
+
 .subTitle {
   color: #fff;
   font-size: 36px;
+}
+
+.video {
+  position: relative;
+  width: 80%;
+  max-width: 960px;
+  margin: -200px auto 0;
 }
