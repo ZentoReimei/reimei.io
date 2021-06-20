@@ -33,7 +33,7 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'intro',
+          docId: 'missionstatement',
           position: 'left',
           label: 'ドキュメント'
         },
@@ -53,7 +53,7 @@ module.exports = {
           items: [
             {
               label: 'ドキュメント',
-              to: '/docs/intro'
+              to: '/docs/missionstatement'
             }
           ]
         },
@@ -100,13 +100,11 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/'
+          editUrl: 'https://github.com/ZentoReimei/reimei.io/tree/master/'
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/'
+          editUrl: 'https://github.com/ZentoReimei/reimei.io/tree/master/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
