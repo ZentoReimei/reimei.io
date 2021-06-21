@@ -41,13 +41,30 @@
 }
 
 .subTitle {
-  color: #fff;
+  color: #aff;
   font-size: 36px;
+  text-decoration: underline;
 }
 
 .video {
   position: relative;
   width: 80%;
-  max-width: 960px;
+  max-width: 1280px;
   margin: -200px auto 0;
+}
+
+.textBlockTitle {
+  width: 80%;
+  max-width: 1280px;
+  margin: 48px auto 0;
+  text-align: center;
+}
+
+.textBlockContent {
+  max-width: 1280px;
+  margin: 16px auto 0;
+  width: 80%;
+  white-space: pre-wrap;
+  line-height: 1.8;
+  font-size: 20px;
 }
