@@ -2,8 +2,8 @@ import React from 'react'
 import clsx from 'clsx'
 import Layout from '@theme/Layout'
 import styles from './index.module.css'
-import HomepageFeatures from '../components/HomepageFeatures'
 import VideoWrapper from '../components/VideoWrapper'
+import Member from '../components/Member'
 
 function HomepageHeader() {
   return (
@@ -31,21 +31,21 @@ const textBlocks: { title: string; contents: string[] }[] = [
   {
     title: '2017年都議選の投票率は51.28%',
     contents: [
-      '今の都政は半分ちょっとの都民によって民主主義が守られている。みんなが納得できる未来のためにあと半分の力が必要だ。',
-      '駅前に立ってメガホンで呼びかけても投票率は上がらないなら、仕組みを変えていこうじゃないか。自然と誰もが投票に行きたくなる東京をともに作っていこう。'
+      '今の都政は半分ちょっとの都民によって民主主義が守られている。みんなが納得できる未来のために残り半分の力も必要だ。',
+      '駅前からメガホンで呼びかけても投票率が上がらないなら、仕組みを変えていこうじゃないか。自然と誰もが投票に行きたくなる東京をともに作っていこう。'
     ]
   },
   {
     title: '投票率95％で明日を変える全都民主主義',
     contents: [
-      '95％もあれば、やってくる未来は全都民の選択の結果と言えるのではないだろうか？全都民参加の民主主義、それが全都民主主義。',
+      '95％が投票した結果の未来は全都民の選択と言えるのではないだろうか？全都民参加の民主主義、それが全都民主主義。',
       '良い結果も悪い結果も全都民で決めて変えていける未来をともに作ろう。'
     ]
   },
   {
-    title: '時代とともに民主主義もアップデート',
+    title: '時代に合わせて民主主義もアップデート',
     contents: [
-      '社会が変わっているのなら、民主主義も変えていかないと時代遅れな仕組みになってしまう。昨日まで正しかったことが、明日も正しいわけじゃないから。',
+      '社会が変わっているのなら、民主主義の形も変えていかないと時代遅れな仕組みになってしまう。昨日まで正しかったことが、明日も正しいわけじゃないから。',
       '一人一人が出来ることから都政を変えていける未来を見たい。新しい仕組みを作るには、全都民が投票している健全な民主主義が必要だ。',
       '全都民主主義で東京の夜明けを見よう。'
     ]
@@ -59,10 +59,10 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-      <div className={styles.video}>
-        <VideoWrapper />
-      </div>
-      <main>
+      <main className={styles.main}>
+        <div className={styles.video}>
+          <VideoWrapper />
+        </div>
         {textBlocks.map((block) => (
           <React.Fragment key={block.title}>
             <h2 className={styles.textBlockTitle}>{block.title}</h2>
@@ -73,7 +73,7 @@ export default function Home() {
             ))}
           </React.Fragment>
         ))}
-        <HomepageFeatures />
+        <Member />
       </main>
     </Layout>
   )

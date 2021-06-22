@@ -1,0 +1,28 @@
+.members {
+  margin-top: 40px;
+}
+
+.text {
+  margin-top: 16px;
+  text-align: center;
+  white-space: pre-wrap;
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+.row {
+  width: 100%;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.icon {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
