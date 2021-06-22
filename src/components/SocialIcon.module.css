@@ -1,0 +1,13 @@
+.socialLink {
+  margin: 0 16px;
+}
+
+.socialIcon {
+  width: 48px;
+  fill: #fff;
+  transition: 0.2s;
+}
+
+.socialIcon:hover {
+  transform: scale(1.2);
+}

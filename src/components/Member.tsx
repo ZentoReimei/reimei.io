@@ -2,35 +2,32 @@ import React from 'react'
 import clsx from 'clsx'
 import Link from '@docusaurus/Link'
 import styles from './Member.module.css'
-import svg0 from '../../static/img/undraw_docusaurus_mountain.svg'
-import svg1 from '../../static/img/undraw_docusaurus_tree.svg'
+import SocialIcon from './SocialIcon'
 
 const FeatureList = [
   {
     title: '全都黎明代表 Solufa',
-    Svg: svg0,
     icon: 'https://avatars1.githubusercontent.com/solufa?s=200',
-    link: {
-      to: '',
-      label: ''
-    },
+    links: [
+      { to: 'https://github.com/solufa', icon: 'github' as const },
+      { to: 'https://twitter.com/m_mitsuhide', icon: 'twitter' as const }
+    ],
     description: 'TypeScriptオープンソース開発者'
   },
   {
     title: '会計責任者 木下ようすけ',
-    Svg: svg1,
     icon: 'https://kinoshita-yosuke.com/wp-content/themes/kinoshita-yosuke/dist/assets/img/profile_img@2x.png',
-    link: {
-      to: '',
-      label: ''
-    },
+    links: [
+      { to: 'https://kinoshita-yosuke.com', icon: 'home' as const },
+      { to: 'https://twitter.com/kinoyosuke', icon: 'twitter' as const }
+    ],
     description: '2021年東京都議会議員候補者'
   }
 ]
 
-function Feature({ icon, title, link, description }) {
+function Feature({ icon, title, links, description }: typeof FeatureList[number]) {
   return (
-    <div className={clsx('col col--6')}>
+    <div className="col col--6">
       <div className="text--center">
         <img className={styles.icon} src={icon} loading="lazy" alt={title} />
       </div>
@@ -38,9 +35,9 @@ function Feature({ icon, title, link, description }) {
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-      <Link className="button button--secondary button--lg" to={link.to}>
-        {link.label}
-      </Link>
+      <div className="text--center">
+        {links.map(({ to, icon }) => <SocialIcon key={to} icon={icon} to={to} fill="#fff" />)}
+      </div>
     </div>
   )
 }
@@ -54,7 +51,14 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.members}>
       <h2 className="text--center">Webエンジニアが作った政治団体「全都黎明」</h2>
-      {texts.map(t => <div key={t} className={styles.text}>{t}</div>)}
+      {texts.map((t) => (
+        <div key={t} className={styles.text}>
+          {t}
+        </div>
+      ))}
+      <Link to="/docs/missionstatement" className={styles.statementLink}>
+        全都黎明の綱領を見る
+      </Link>
       <div className={styles.features}>
         <div className={clsx('row', styles.row)}>
           {FeatureList.map((props, idx) => (

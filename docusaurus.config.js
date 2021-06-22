@@ -37,7 +37,7 @@ module.exports = {
           position: 'left',
           label: 'ドキュメント'
         },
-        { to: '/blog', label: 'ブログ', position: 'left' },
+        // { to: '/blog', label: 'ブログ', position: 'left' },
         {
           href: 'https://github.com/ZentoReimei/reimei.io',
           label: 'GitHub',
@@ -69,10 +69,10 @@ module.exports = {
         {
           title: 'More',
           items: [
-            {
-              label: 'ブログ',
-              to: '/blog'
-            },
+            // {
+            //   label: 'ブログ',
+            //   to: '/blog'
+            // },
             {
               label: 'GitHub',
               href: 'https://github.com/ZentoReimei/reimei.io'

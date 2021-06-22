@@ -6,11 +6,14 @@
  */
 
 .heroBanner {
-  min-height: 100vh;
-  padding-bottom: 200px;
+  min-height: calc(100vh - 60px);
+  padding-bottom: 100px;
   text-align: center;
-  position: relative;
   overflow: hidden;
+}
+
+.gradient {
+  position: relative;
   background: #000428; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #000428, #004e92); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -22,7 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: center/cover url(/img/hero.jpg);
+  background: center/cover url(/img/hero.jpg) fixed;
   opacity: 0.3;
 }
 
@@ -48,17 +51,41 @@
 
 .main {
   width: 80%;
-  max-width: 1280px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .video {
+  width: 80%;
+  max-width: 1080px;
   position: relative;
-  margin-top: -200px;
+  margin: -100px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    padding-bottom: 60px;
+  }
+
+  .heroTitle {
+    font-size: 48px;
+  }
+  
+  .strongNumber {
+    font-size: 72px;
+  }
+  
+  .subTitle {
+    font-size: 24px;
+  }
+
+  .video {
+    margin: -60px auto 0;
+  }
 }
 
 .textBlockTitle {
-  margin-top: 48px;
+  margin-top: 64px;
   text-align: center;
 }
 
@@ -68,4 +95,12 @@
   white-space: pre-wrap;
   line-height: 1.8;
   font-size: 20px;
+}
+
+.socials {
+  margin-top: 40px;
+}
+
+.member {
+  margin-top: 64px;
 }

@@ -1,5 +1,7 @@
 .members {
-  margin-top: 40px;
+  position: relative;
+  padding-top: 64px;
+  color: #fff;
 }
 
 .text {
@@ -14,11 +16,30 @@
   width: 100%;
 }
 
+.statementLink{
+  display: block;
+  width: 240px;
+  padding: 8px 0;
+  margin: 32px auto 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.statementLink:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #fff8;
+}
+
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  padding: 4rem 0;
 }
 
 .icon {
