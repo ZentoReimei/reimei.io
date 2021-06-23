@@ -40,7 +40,7 @@ export default function Supporters() {
         #全都民主主義で東京の夜明けを見よう
       </Link>
       <div className={styles.counter}>
-        現在<span>{filteredSupporters.length}</span>人が都政参加の意思表明をしました
+        現在<span>{filteredSupporters.length}</span>人が意思表明のツイートをしました
       </div>
       <div className={styles.icons}>
         {filteredSupporters.map(({ id, icon }) => (

@@ -6,7 +6,7 @@ import SocialIcon from './SocialIcon'
 
 const MemberList = [
   {
-    title: '全都黎明代表 Solufa',
+    title: '全都黎明代表 Solufa (31)',
     icon: 'https://avatars1.githubusercontent.com/solufa?s=200',
     links: [
       { to: 'https://github.com/solufa', icon: 'github' as const },
@@ -15,7 +15,7 @@ const MemberList = [
     description: 'TypeScriptオープンソース開発者'
   },
   {
-    title: '会計責任者 木下ようすけ',
+    title: '会計責任者 木下ようすけ (36)',
     icon: 'https://kinoshita-yosuke.com/wp-content/themes/kinoshita-yosuke/dist/assets/img/profile_img@2x.png',
     links: [
       { to: 'https://kinoshita-yosuke.com', icon: 'home' as const },

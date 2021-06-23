@@ -26,7 +26,7 @@
   right: 0;
   bottom: 0;
   background: center/cover url(/img/hero.jpg) fixed;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .container {
@@ -38,15 +38,15 @@
   font-size: 64px;
 }
 
-.strongNumber {
-  font-size: 88px;
-  color: #ff0;
+.subTitle {
+  color: #fff;
+  font-size: 36px;
 }
 
-.subTitle {
-  color: #aff;
-  font-size: 36px;
-  text-decoration: underline;
+.headerLogo {
+  margin-top: 64px;
+  width: 320px;
+  fill: #fff;
 }
 
 .main {
@@ -79,6 +79,11 @@
     font-size: 24px;
   }
 
+  .headerLogo {
+    margin-top: 48px;
+    width: 240px;
+  }
+
   .video {
     margin: -60px auto 0;
   }
@@ -108,5 +113,5 @@
 .footerLogo {
   display: block;
   width: 120px;
-  margin: 32px auto;
+  margin: 32px auto 0;
 }

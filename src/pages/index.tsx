@@ -1,25 +1,22 @@
 import React from 'react'
 import clsx from 'clsx'
-import Link from '@docusaurus/Link'
 import Layout from '@theme/Layout'
 import styles from './index.module.css'
+import Logo from '../../static/img/logo.svg'
 import VideoWrapper from '../components/VideoWrapper'
 import Member from '../components/Member'
 import Supporters from '../components/Supporters'
 import SocialIcon from '../components/SocialIcon'
+import Recruitment from '../components/Recruitment'
 
 function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner, styles.gradient)}>
       <div className={styles.background} />
       <div className={clsx('container', styles.container)}>
-        <h1 className={styles.heroTitle}>
-          {/* 東京は<span className={styles.strongNumber}>51</span>%の大人が都政を自分で決める */}
-          変化が特別じゃない東京にしたい
-        </h1>
-        <Link to="https://twitter.com/hashtag/全都民主主義で東京の夜明けを見よう">
-          <p className={styles.subTitle}>行動しよう、新たな夜明けを見るために</p>
-        </Link>
+        <h1 className={styles.heroTitle}>変化が特別じゃない東京にしたい</h1>
+        <p className={styles.subTitle}>行動しよう、新たな夜明けを見るために</p>
+        <Logo className={styles.headerLogo} />
       </div>
     </header>
   )
@@ -58,7 +55,7 @@ export default function Home() {
   return (
     <Layout
       title="投票率95％の全都民主主義で明日を変える政治団体"
-      description="Description will go into a meta tag in <head />"
+      description="全都黎明 (ぜんとれいめい)"
     >
       <HomepageHeader />
       <div className={styles.video}>
@@ -89,8 +86,9 @@ export default function Home() {
       </div>
       <div className={styles.main}>
         <Supporters />
+        <Logo className={styles.footerLogo} />
+        <Recruitment />
       </div>
-      <img className={styles.footerLogo} src="/img/logo.svg" alt="全都黎明ロゴ" />
     </Layout>
   )
 }
