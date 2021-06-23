@@ -14,10 +14,11 @@ function HomepageHeader() {
       <div className={styles.background} />
       <div className={clsx('container', styles.container)}>
         <h1 className={styles.heroTitle}>
-          東京は<span className={styles.strongNumber}>51</span>%の大人が都政を自分で決める
+          {/* 東京は<span className={styles.strongNumber}>51</span>%の大人が都政を自分で決める */}
+          変化が特別じゃない東京にしたい
         </h1>
         <Link to="https://twitter.com/hashtag/全都民主主義で東京の夜明けを見よう">
-          <p className={styles.subTitle}>#全都民主主義で東京の夜明けを見よう</p>
+          <p className={styles.subTitle}>行動しよう、新たな夜明けを見るために</p>
         </Link>
       </div>
     </header>
