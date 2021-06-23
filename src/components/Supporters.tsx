@@ -33,10 +33,15 @@ export default function Supporters() {
           {t}
         </div>
       ))}
-      <Link className={styles.twitterLink} to="https://twitter.com/hashtag/全都民主主義で東京の夜明けを見よう">
+      <Link
+        className={styles.twitterLink}
+        to="https://twitter.com/hashtag/全都民主主義で東京の夜明けを見よう"
+      >
         #全都民主主義で東京の夜明けを見よう
       </Link>
-      <div className={styles.counter}>現在<span>{filteredSupporters.length}</span>人が都政参加の意思表明をしました</div>
+      <div className={styles.counter}>
+        現在<span>{filteredSupporters.length}</span>人が都政参加の意思表明をしました
+      </div>
       <div className={styles.icons}>
         {filteredSupporters.map(({ id, icon }) => (
           <Supporter key={id} id={id} icon={icon} />
