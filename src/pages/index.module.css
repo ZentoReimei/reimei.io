@@ -51,7 +51,7 @@
 
 .main {
   width: 80%;
-  max-width: 800px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -103,4 +103,10 @@
 
 .member {
   margin-top: 64px;
+}
+
+.footerLogo {
+  display: block;
+  width: 120px;
+  margin: 32px auto;
 }

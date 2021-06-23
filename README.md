@@ -1,5 +1,7 @@
 # 全都黎明公式サイト
 
+Pull Request 募集中！デザインや SEO 改善、Issue 対応をしてもらえると非常に助かります。
+
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ## Installation

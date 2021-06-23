@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link'
 import styles from './Member.module.css'
 import SocialIcon from './SocialIcon'
 
-const FeatureList = [
+const MemberList = [
   {
     title: '全都黎明代表 Solufa',
     icon: 'https://avatars1.githubusercontent.com/solufa?s=200',
@@ -25,7 +25,7 @@ const FeatureList = [
   }
 ]
 
-function Feature({ icon, title, links, description }: typeof FeatureList[number]) {
+function Member({ icon, title, links, description }: typeof MemberList[number]) {
   return (
     <div className="col col--6">
       <div className="text--center">
@@ -36,7 +36,9 @@ function Feature({ icon, title, links, description }: typeof FeatureList[number]
         <p>{description}</p>
       </div>
       <div className="text--center">
-        {links.map(({ to, icon }) => <SocialIcon key={to} icon={icon} to={to} fill="#fff" />)}
+        {links.map(({ to, icon }) => (
+          <SocialIcon key={to} icon={icon} to={to} fill="#fff" />
+        ))}
       </div>
     </div>
   )
@@ -47,7 +49,7 @@ const texts = [
   '政治に無関係だった普通の都民が東京の未来を自分で決める仕組みを作ろうと集まっています。右も左も関係なく全都民主主義に賛同するメンバーによる、完全に自律的な政治団体です。'
 ]
 
-export default function HomepageFeatures() {
+export default function Members() {
   return (
     <section className={styles.members}>
       <h2 className="text--center">Webエンジニアが作った政治団体「全都黎明」</h2>
@@ -61,8 +63,8 @@ export default function HomepageFeatures() {
       </Link>
       <div className={styles.features}>
         <div className={clsx('row', styles.row)}>
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {MemberList.map((props, idx) => (
+            <Member key={idx} {...props} />
           ))}
         </div>
       </div>

@@ -1,9 +1,11 @@
 import React from 'react'
 import clsx from 'clsx'
+import Link from '@docusaurus/Link'
 import Layout from '@theme/Layout'
 import styles from './index.module.css'
 import VideoWrapper from '../components/VideoWrapper'
 import Member from '../components/Member'
+import Supporters from '../components/Supporters'
 import SocialIcon from '../components/SocialIcon'
 
 function HomepageHeader() {
@@ -12,17 +14,11 @@ function HomepageHeader() {
       <div className={styles.background} />
       <div className={clsx('container', styles.container)}>
         <h1 className={styles.heroTitle}>
-          東京は<span className={styles.strongNumber}>51</span>%の大人が都政を自分で決めた
+          東京は<span className={styles.strongNumber}>51</span>%の大人が都政を自分で決める
         </h1>
-        <p>
-          <a
-            className={styles.subTitle}
-            href="https://twitter.com/hashtag/全都民主主義で東京の夜明けを見よう"
-            target="_brank"
-          >
-            #全都民主主義で東京の夜明けを見よう
-          </a>
-        </p>
+        <Link to="https://twitter.com/hashtag/全都民主主義で東京の夜明けを見よう">
+          <p className={styles.subTitle}>#全都民主主義で東京の夜明けを見よう</p>
+        </Link>
       </div>
     </header>
   )
@@ -64,9 +60,9 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-        <div className={styles.video}>
-          <VideoWrapper />
-        </div>
+      <div className={styles.video}>
+        <VideoWrapper />
+      </div>
       <main className={styles.main}>
         {textBlocks.map((block) => (
           <React.Fragment key={block.title}>
@@ -78,8 +74,10 @@ export default function Home() {
             ))}
           </React.Fragment>
         ))}
-        <div className={clsx("text--center", styles.socials)}>
-          {links.map(({ to, icon }) => <SocialIcon key={to} icon={icon} to={to} fill="#334" />)}
+        <div className={clsx('text--center', styles.socials)}>
+          {links.map(({ to, icon }) => (
+            <SocialIcon key={to} icon={icon} to={to} fill="#334" />
+          ))}
         </div>
       </main>
       <div className={clsx(styles.gradient, styles.member)}>
@@ -88,6 +86,10 @@ export default function Home() {
           <Member />
         </div>
       </div>
+      <div className={styles.main}>
+        <Supporters />
+      </div>
+      <img className={styles.footerLogo} src="/img/logo.svg" alt="全都黎明ロゴ" />
     </Layout>
   )
 }
