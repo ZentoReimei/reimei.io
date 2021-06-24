@@ -21,7 +21,7 @@ function Supporter(props: { id: string; icon: string }) {
 
 const texts = [
   '今できる小さな一歩目からあなたも都政参加を始めよう。下のボタンのハッシュタグを使ってあなたの都政への想いをツイートしてください',
-  'あなたのアイコンにそのツイートへのリンクを付けて全都黎明がGitHubとサイトに残します。'
+  'あなたのアイコンにそのツイートへのリンクを付けて全都黎明がGitHubとこのサイトに残します。'
 ]
 
 export default function Supporters() {

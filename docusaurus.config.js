@@ -18,16 +18,16 @@ module.exports = {
       { name: 'twitter:card', content: 'summary_large_image' },
       {
         name: 'description',
-        content: '全都黎明 (ぜんとれいめい)'
+        content: '投票率95%の全都民主主義で東京の明日を変える全都黎明 (ぜんとれいめい)'
       },
       {
         property: 'og:description',
-        content: '全都黎明 (ぜんとれいめい)'
+        content: '投票率95%の全都民主主義で東京の明日を変える全都黎明 (ぜんとれいめい)'
       }
     ],
     navbar: {
       logo: {
-        alt: '全都黎明 (ぜんとれいめい)',
+        alt: '全都黎明 (ぜんとれいめい)ロゴ',
         src: 'img/logo.svg'
       },
       items: [

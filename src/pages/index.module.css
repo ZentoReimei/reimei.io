@@ -26,7 +26,7 @@
   right: 0;
   bottom: 0;
   background: center/cover url(/img/hero.jpg) fixed;
-  opacity: 0.5;
+  opacity: 0.45;
 }
 
 .container {
@@ -38,13 +38,19 @@
   font-size: 64px;
 }
 
+.strongNumber {
+  font-size: 88px;
+  color: #ff0;
+}
+
 .subTitle {
   color: #fff;
   font-size: 36px;
+  font-weight: bold;
 }
 
 .headerLogo {
-  margin-top: 64px;
+  margin-top: 48px;
   width: 320px;
   fill: #fff;
 }
@@ -113,5 +119,5 @@
 .footerLogo {
   display: block;
   width: 120px;
-  margin: 32px auto 0;
+  margin: 32px auto;
 }

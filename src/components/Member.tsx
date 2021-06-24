@@ -27,19 +27,15 @@ const MemberList = [
 
 function Member({ icon, title, links, description }: typeof MemberList[number]) {
   return (
-    <div className="col col--6">
-      <div className="text--center">
-        <img className={styles.icon} src={icon} loading="lazy" alt={title} />
-      </div>
-      <div className="text--center padding-horiz--md">
+    <div className="col col--6 text--center margin-top--lg">
+      <img className={styles.icon} src={icon} loading="lazy" alt={title} />
+      <div className="padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-      <div className="text--center">
-        {links.map(({ to, icon }) => (
-          <SocialIcon key={to} icon={icon} to={to} fill="#fff" />
-        ))}
-      </div>
+      {links.map(({ to, icon }) => (
+        <SocialIcon key={to} icon={icon} to={to} fill="#fff" />
+      ))}
     </div>
   )
 }
