@@ -33,12 +33,14 @@ export default function Supporters() {
           {t}
         </div>
       ))}
-      <Link
-        className={styles.twitterLink}
-        to="https://twitter.com/hashtag/全都民主主義で東京の夜明けを見よう"
-      >
-        #全都民主主義で東京の夜明けを見よう
-      </Link>
+      <div className="text--center">
+        <Link
+          className={styles.twitterLink}
+          to="https://twitter.com/hashtag/全都民主主義で東京の夜明けを見よう"
+        >
+          #全都民主主義で東京の夜明けを見よう
+        </Link>
+      </div>
       <div className={styles.counter}>
         現在<span>{filteredSupporters.length}</span>人が意思表明のツイートをしました
       </div>
