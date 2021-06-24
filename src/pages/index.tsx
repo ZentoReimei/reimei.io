@@ -13,8 +13,7 @@ import SocialIcon from '../components/SocialIcon'
 function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner, styles.gradient)}>
-      <div className={styles.background} />
-      <div className={clsx('container', styles.container)}>
+      <div className="container">
         <h1 className={styles.heroTitle}>
           <span className={styles.strongNumber}>1,395</span>万人で
           <span className={styles.strongNumber}>4</span>年後の希望を作ろう
@@ -83,7 +82,6 @@ export default function Home() {
         </div>
       </main>
       <div className={clsx(styles.gradient, styles.member)}>
-        <div className={styles.background} />
         <div className={styles.main}>
           <Member />
         </div>

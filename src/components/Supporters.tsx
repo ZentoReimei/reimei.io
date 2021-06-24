@@ -20,14 +20,14 @@ function Supporter(props: { id: string; icon: string }) {
 }
 
 const texts = [
-  '今できる小さな一歩目からあなたも都政参加を始めよう。下のボタンのハッシュタグを使ってあなたの都政への想いをツイートしてください',
-  'あなたのアイコンにそのツイートへのリンクを付けて全都黎明がGitHubとこのサイトに残します。'
+  '小さな一歩目からあなたも都政参加を始めよう。ハッシュタグ「#全都民主主義で東京の夜明けを見よう」を使ってあなたの都政への願いをツイートしてください。',
+  'あなたのアイコンにリンクを付けて全都黎明がGitHubとこのサイトに残します。'
 ]
 
 export default function Supporters() {
   return (
     <section className={styles.supporters}>
-      <h2 className="text--center">あなたも都政参加の一歩目をツイートで踏み出そう</h2>
+      <h2 className="text--center">あなたが踏み出した一歩目を全都黎明のサイトに刻もう</h2>
       {texts.map((t) => (
         <div key={t} className={styles.text}>
           {t}

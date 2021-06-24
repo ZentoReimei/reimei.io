@@ -13,7 +13,7 @@ module.exports = {
   organizationName: 'ZentoReimei',
   projectName: 'reimei.io',
   themeConfig: {
-    image: 'img/ogp.png',
+    image: 'img/ogp.jpg',
     metadatas: [
       { name: 'twitter:card', content: 'summary_large_image' },
       {
