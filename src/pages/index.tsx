@@ -59,8 +59,8 @@ const textBlocks: { title: string; contents: string[] }[] = [
 ]
 
 const links = [
-  { to: 'https://github.com/ZentoReimei/reimei.io', icon: 'github' as const },
-  { to: 'https://twitter.com/ZentoReimei', icon: 'twitter' as const }
+  { to: 'https://github.com/ZentoReimei/reimei.io', icon: 'github' as const, fill: 'black' },
+  { to: 'https://twitter.com/ZentoReimei', icon: 'twitter' as const, fill: '#1d9Bf0' }
 ]
 
 function ContentTitle(props: { main: string; sub: string }) {
@@ -93,8 +93,8 @@ export default function Home() {
           </React.Fragment>
         ))}
         <div className={clsx('text--center', styles.socials)}>
-          {links.map(({ to, icon }) => (
-            <SocialIcon key={to} icon={icon} to={to} fill="#334" />
+          {links.map(({ to, icon, fill }) => (
+            <SocialIcon key={to} icon={icon} to={to} fill={fill} />
           ))}
         </div>
       </main>

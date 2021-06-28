@@ -1,9 +1,9 @@
 .socialLink {
-  margin: 0 16px;
+  margin: 0 12px;
 }
 
 .socialIcon {
-  width: 48px;
+  width: 32px;
   fill: #fff;
   transition: 0.2s;
 }

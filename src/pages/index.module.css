@@ -8,7 +8,7 @@
 .heroBanner {
   position: relative;
   min-height: calc(100vh - 60px);
-  background: center/cover url(/img/top.jpg);
+  background: center/cover url(/img/top.jpg) fixed;
   text-align: center;
   overflow: hidden;
 }

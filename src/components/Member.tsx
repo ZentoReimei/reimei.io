@@ -3,11 +3,13 @@ import clsx from 'clsx'
 import Link from '@docusaurus/Link'
 import styles from './Member.module.css'
 import SocialIcon from './SocialIcon'
+import SolufaIcon from '../../assets/img/solufa.svg'
+import YosukeIcon from '../../assets/img/yosuke.svg'
 
 const MemberList = [
   {
-    title: '全都黎明代表 Solufa (31)',
-    icon: 'https://avatars1.githubusercontent.com/solufa?s=200',
+    title: <>全都黎明代表<br />Solufa / 32</>,
+    Icon: SolufaIcon,
     links: [
       { to: 'https://github.com/solufa', icon: 'github' as const, fill: 'black' },
       { to: 'https://twitter.com/m_mitsuhide', icon: 'twitter' as const, fill: '#1d9Bf0' }
@@ -15,8 +17,8 @@ const MemberList = [
     description: 'TypeScriptオープンソース開発者'
   },
   {
-    title: '会計責任者 木下ようすけ (36)',
-    icon: 'https://kinoshita-yosuke.com/wp-content/themes/kinoshita-yosuke/dist/assets/img/profile_img@2x.png',
+    title: <>会計責任者<br />木下ようすけ / 36</>,
+    Icon: YosukeIcon,
     links: [
       { to: 'https://kinoshita-yosuke.com', icon: 'home' as const, fill: 'black' },
       { to: 'https://twitter.com/kinoyosuke', icon: 'twitter' as const, fill: '#1d9Bf0' }
@@ -25,11 +27,11 @@ const MemberList = [
   }
 ]
 
-function Member({ icon, title, links, description }: typeof MemberList[number]) {
+function Member({ Icon, title, links, description }: typeof MemberList[number]) {
   return (
     <div className="col col--6 text--center margin-top--lg">
-      <img className={styles.icon} src={icon} loading="lazy" alt={title} />
-      <div className="padding-horiz--md">
+      <Icon className={styles.icon} />
+      <div className="margin-top--md">
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
