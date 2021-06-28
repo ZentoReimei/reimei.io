@@ -8,7 +8,13 @@ import YosukeIcon from '../../assets/img/yosuke.svg'
 
 const MemberList = [
   {
-    title: <>全都黎明代表<br />Solufa / 32</>,
+    title: (
+      <>
+        全都黎明代表
+        <br />
+        Solufa / 32
+      </>
+    ),
     Icon: SolufaIcon,
     links: [
       { to: 'https://github.com/solufa', icon: 'github' as const, fill: 'black' },
@@ -17,7 +23,13 @@ const MemberList = [
     description: 'TypeScriptオープンソース開発者'
   },
   {
-    title: <>会計責任者<br />木下ようすけ / 36</>,
+    title: (
+      <>
+        会計責任者
+        <br />
+        木下ようすけ / 36
+      </>
+    ),
     Icon: YosukeIcon,
     links: [
       { to: 'https://kinoshita-yosuke.com', icon: 'home' as const, fill: 'black' },
