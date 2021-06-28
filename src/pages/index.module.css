@@ -6,76 +6,107 @@
  */
 
 .heroBanner {
+  position: relative;
   min-height: calc(100vh - 60px);
-  padding-bottom: 100px;
+  background: center/cover url(/img/top.jpg);
   text-align: center;
   overflow: hidden;
-  text-shadow: 1px 1px #000;
 }
 
 .gradient {
-  background: linear-gradient(45deg, #00042860, #004e9280), center/cover url(/img/hero.jpg) fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(270deg, #00D8D2 0%, #0081E4 100%);
+  mix-blend-mode: multiply;
+}
+
+.heroContent {
+  position: relative;
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.headerLogo {
+  width: 300px;
+  fill: #fff;
 }
 
 .heroTitle {
+  margin-top: 32px;
   color: #fff;
-  font-size: 64px;
+  font-size: 80px;
 }
 
-.strongNumber {
-  font-size: 88px;
-  color: #ff0;
+.smallText {
+  font-size: 56px;
 }
 
 .subTitle {
   color: #fff;
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 32px;
 }
 
-.headerLogo {
-  margin-top: 48px;
-  width: 320px;
-  fill: #fff;
+.heroTitleBreak {
+  display: none;
 }
 
 .main {
-  width: 80%;
-  max-width: 720px;
+  width: calc(100% - 40px);
+  max-width: 895px;
   margin: 0 auto;
 }
 
-.video {
-  width: 80%;
-  max-width: 1080px;
-  position: relative;
-  margin: -100px auto 0;
+.contentTitle {
+  padding: 160px 0 96px;
+  text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .heroBanner {
-    padding-bottom: 60px;
+.contentTitleMain {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.contentTitleSub {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 599px) {
+  .headerLogo {
+    width: 160px;
   }
 
   .heroTitle {
-    font-size: 48px;
+    font-size: 40px;
+    line-height: 1.4;
   }
   
-  .strongNumber {
-    font-size: 72px;
+  .smallText {
+    font-size: 32px;
   }
   
   .subTitle {
-    font-size: 24px;
+    font-size: 20px;
   }
 
-  .headerLogo {
-    margin-top: 48px;
-    width: 240px;
+  .heroTitleBreak {
+    display: inline;
   }
 
-  .video {
-    margin: -60px auto 0;
+  .contentTitle {
+    padding: 80px 0 64px;
+  }
+  
+  .contentTitleMain {
+    font-size: 32px;
+  }
+  
+  .contentTitleSub {
+    font-size: 12px;
   }
 }
 
@@ -97,7 +128,14 @@
 }
 
 .member {
-  margin-top: 64px;
+  margin-top: 40px;
+  background: #f4f4f4;
+}
+
+.memberContent {
+  width: calc(100% - 40px);
+  max-width: 592px;
+  margin: 0 auto;
 }
 
 .footerLogo {

@@ -12,14 +12,23 @@ import SocialIcon from '../components/SocialIcon'
 
 function HomepageHeader() {
   return (
-    <header className={clsx('hero', styles.heroBanner, styles.gradient)}>
-      <div className="container">
-        <h1 className={styles.heroTitle}>
-          <span className={styles.strongNumber}>1,395</span>万人で
-          <span className={styles.strongNumber}>4</span>年後の希望を作ろう
-        </h1>
-        <p className={styles.subTitle}>全都民主主義で東京の明日を変える政治団体</p>
+    <header className={clsx('hero', styles.heroBanner)}>
+      <div className={styles.gradient} />
+      <div className={styles.heroContent}>
         <Logo className={styles.headerLogo} />
+        <h1 className={styles.heroTitle}>
+          1395万人<span className={styles.smallText}>で</span>
+          <br />
+          4年後<span className={styles.smallText}>の</span>希望
+          <span className={styles.smallText}>を</span>
+          <br className={styles.heroTitleBreak} />
+          作ろう
+        </h1>
+        <p className={styles.subTitle}>
+          全都民主主義で
+          <br />
+          東京の明日を変える政治団体
+        </p>
       </div>
     </header>
   )
@@ -54,6 +63,15 @@ const links = [
   { to: 'https://twitter.com/ZentoReimei', icon: 'twitter' as const }
 ]
 
+function ContentTitle(props: { main: string; sub: string }) {
+  return (
+    <div className={styles.contentTitle}>
+      <div className={styles.contentTitleMain}>{props.main}</div>
+      <div className={styles.contentTitleSub}>{props.sub}</div>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <Layout title="投票率95％の全都民主主義で東京の明日を変える政治団体">
@@ -61,10 +79,9 @@ export default function Home() {
         <meta name="keywords" content="ぜんとれいめい,全都黎明,都議選,東京都議会議員選挙" />
       </Head>
       <HomepageHeader />
-      <div className={styles.video}>
-        <VideoWrapper />
-      </div>
       <main className={styles.main}>
+        <ContentTitle main="Message" sub="メッセージ" />
+        <VideoWrapper />
         {textBlocks.map((block) => (
           <React.Fragment key={block.title}>
             <h2 className={styles.textBlockTitle}>{block.title}</h2>
@@ -81,8 +98,9 @@ export default function Home() {
           ))}
         </div>
       </main>
-      <div className={clsx(styles.gradient, styles.member)}>
-        <div className={styles.main}>
+      <div className={clsx(styles.member)}>
+        <ContentTitle main="Member" sub="メンバー" />
+        <div className={styles.memberContent}>
           <Member />
         </div>
       </div>

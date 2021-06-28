@@ -9,8 +9,8 @@ const MemberList = [
     title: '全都黎明代表 Solufa (31)',
     icon: 'https://avatars1.githubusercontent.com/solufa?s=200',
     links: [
-      { to: 'https://github.com/solufa', icon: 'github' as const },
-      { to: 'https://twitter.com/m_mitsuhide', icon: 'twitter' as const }
+      { to: 'https://github.com/solufa', icon: 'github' as const, fill: 'black' },
+      { to: 'https://twitter.com/m_mitsuhide', icon: 'twitter' as const, fill: '#1d9Bf0' }
     ],
     description: 'TypeScriptオープンソース開発者'
   },
@@ -18,8 +18,8 @@ const MemberList = [
     title: '会計責任者 木下ようすけ (36)',
     icon: 'https://kinoshita-yosuke.com/wp-content/themes/kinoshita-yosuke/dist/assets/img/profile_img@2x.png',
     links: [
-      { to: 'https://kinoshita-yosuke.com', icon: 'home' as const },
-      { to: 'https://twitter.com/kinoyosuke', icon: 'twitter' as const }
+      { to: 'https://kinoshita-yosuke.com', icon: 'home' as const, fill: 'black' },
+      { to: 'https://twitter.com/kinoyosuke', icon: 'twitter' as const, fill: '#1d9Bf0' }
     ],
     description: '2021年東京都議会議員候補者'
   }
@@ -33,8 +33,8 @@ function Member({ icon, title, links, description }: typeof MemberList[number]) 
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-      {links.map(({ to, icon }) => (
-        <SocialIcon key={to} icon={icon} to={to} fill="#fff" />
+      {links.map(({ to, icon, fill }) => (
+        <SocialIcon key={to} icon={icon} to={to} fill={fill} />
       ))}
     </div>
   )
@@ -47,10 +47,10 @@ const texts = [
 
 export default function Members() {
   return (
-    <section className={styles.members}>
+    <section>
       <h2 className="text--center">Webエンジニアが作った政治団体「全都黎明」</h2>
       {texts.map((t) => (
-        <div key={t} className={styles.text}>
+        <div key={t} className={styles.mmeberText}>
           {t}
         </div>
       ))}
