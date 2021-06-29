@@ -16,7 +16,7 @@
 .statementLink {
   display: block;
   width: 100%;
-  padding: 16px 0;
+  line-height: 72px;
   margin: 80px auto 0;
   font-size: 18px;
   font-weight: bold;
@@ -78,6 +78,8 @@
 
   .statementLink {
     margin-top: 48px;
+    line-height: 48px;
+    font-size: 14px;
   }
 
   .iconArea {

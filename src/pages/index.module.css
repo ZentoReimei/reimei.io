@@ -94,12 +94,6 @@
   margin: 0 auto;
 }
 
-.footerLogo {
-  display: block;
-  width: 120px;
-  margin: 32px auto;
-}
-
 @media screen and (max-width: 599px) {
   .headerLogo {
     width: 160px;

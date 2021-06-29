@@ -74,11 +74,8 @@ export default function Home() {
           <Member />
         </div>
       </div>
-      <div className={styles.main}>
-        <Supporters />
-        <Logo className={styles.footerLogo} />
-        {/* <Recruitment /> */}
-      </div>
+      <Supporters />
+      {/* <Recruitment /> */}
     </Layout>
   )
 }
