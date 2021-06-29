@@ -75,6 +75,32 @@
   font-size: 16px;
 }
 
+.socials {
+  margin-top: 40px;
+}
+
+.messageContent {
+  max-width: 815px;
+  margin: 120px auto 0;
+}
+
+.member {
+  margin-top: 40px;
+  background: #f4f4f4;
+}
+
+.memberContent {
+  width: calc(100% - 40px);
+  max-width: 592px;
+  margin: 0 auto;
+}
+
+.footerLogo {
+  display: block;
+  width: 120px;
+  margin: 32px auto;
+}
+
 @media screen and (max-width: 599px) {
   .headerLogo {
     width: 160px;
@@ -108,38 +134,8 @@
   .contentTitleSub {
     font-size: 12px;
   }
-}
 
-.textBlockTitle {
-  margin-top: 64px;
-  text-align: center;
-}
-
-.textBlockContent {
-  margin-top: 16px;
-  text-align: center;
-  white-space: pre-wrap;
-  line-height: 1.8;
-  font-size: 20px;
-}
-
-.socials {
-  margin-top: 40px;
-}
-
-.member {
-  margin-top: 40px;
-  background: #f4f4f4;
-}
-
-.memberContent {
-  width: calc(100% - 40px);
-  max-width: 592px;
-  margin: 0 auto;
-}
-
-.footerLogo {
-  display: block;
-  width: 120px;
-  margin: 32px auto;
+  .messageContent {
+    margin: 40px auto 0;
+  }
 }

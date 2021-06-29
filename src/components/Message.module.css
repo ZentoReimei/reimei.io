@@ -1,0 +1,107 @@
+.messageWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.messageWrapper::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: #333;
+  top: 0;
+  left: 10px;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.messageWrapper:first-child::after {
+  top: 50%;
+  height: 50%;
+}
+
+.messageWrapper:last-child::after {
+  top: 0;
+  height: 50%;
+}
+
+.messageDot {
+  width: 20px;
+  height: 20px;
+  border: 4px solid #333;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.messageMain {
+  padding-left: 24px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.messageLabel {
+  width: 200px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.messageTexts {
+  flex: 1;
+  padding: 50px 0;
+}
+
+.messageTitle {
+  font-size: 24px;
+}
+
+.messageContent {
+  margin-top: 24px;
+  white-space: pre-wrap;
+  line-height: 2;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 599px) {
+  .messageWrapper {
+    align-items: unset;
+  }
+  
+  .messageWrapper:first-child::after {
+    top: 35px;
+    height: 100%;
+  }
+  
+  .messageWrapper:last-child::after {
+    top: 0;
+    height: 35px;
+  }
+
+  .messageDot {
+    margin-top: 25px;
+  }
+
+  .messageMain {
+    padding-top: 20px;
+    display: block;
+  }
+
+  .messageLabel {
+    line-height: 32px;
+    font-size: 24px;
+  }
+
+  .messageTexts {
+    padding: 24px 0;
+  }
+
+  .messageTitle {
+    font-size: 20px;
+  }
+  
+  .messageContent {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+}
