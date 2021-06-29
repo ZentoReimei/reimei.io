@@ -30,4 +30,5 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 html {
   font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  letter-spacing: 0.1em;
 }

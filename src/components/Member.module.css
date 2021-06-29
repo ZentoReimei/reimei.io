@@ -1,19 +1,23 @@
-.mmeberText {
+.memberTitle {
+  font-size: 40px;
+  line-height: 2;
+  text-align: center;
+  font-weight: normal;
+}
+
+.memberText {
+  margin-top: 80px;
   white-space: pre-wrap;
   line-height: 2;
   font-size: 20px;
   font-weight: bold;
 }
 
-.row {
-  width: 100%;
-}
-
-.statementLink{
+.statementLink {
   display: block;
   width: 100%;
   padding: 16px 0;
-  margin: 32px auto 0;
+  margin: 80px auto 0;
   font-size: 18px;
   font-weight: bold;
   color: #333;
@@ -28,14 +32,77 @@
   background: #555;
 }
 
-.features {
+.iconArea {
+  padding: 144px 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0 3rem;
+}
+
+.memberCard {
+  width: 50%;
+  text-align: center;
 }
 
 .icon {
   height: 140px;
   width: 140px;
+}
+
+.name {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.old {
+  font-size: 18px;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.description {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 599px) {
+  .memberTitle {
+    font-size: 24px;
+  }
+
+  .memberText {
+    margin-top: 48px;
+    font-size: 16px;
+  }
+
+  .statementLink {
+    margin-top: 48px;
+  }
+
+  .iconArea {
+    padding: 72px 0;
+  }
+
+  .icon {
+    height: 120px;
+    width: 120px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+  
+  .old {
+    font-size: 16px;
+  }
+  
+  .small {
+    font-size: 10px;
+  }
+  
+  .description {
+    margin-top: 12px;
+    font-size: 12px;
+  }
 }
