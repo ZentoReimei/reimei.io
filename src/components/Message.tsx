@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Message.module.css'
 
-const textBlocks: {label: string; title: string; content: string }[] = [
+const textBlocks: { label: string; title: string; content: string }[] = [
   {
     label: '現在',
     title: '2017年都議選の投票率は51.28%',
@@ -31,20 +31,18 @@ const textBlocks: {label: string; title: string; content: string }[] = [
 export default function Message() {
   return (
     <>
-    {textBlocks.map((block) => (
-      <div key={block.title} className={styles.messageWrapper}>
-        <div className={styles.messageDot} />
-        <div className={styles.messageMain}>
-          <div className={styles.messageLabel}>{block.label}</div>
-          <div className={styles.messageTexts}>
-          <h2 className={styles.messageTitle}>{block.title}</h2>
-          <div className={styles.messageContent}>
-            {block.content}
-          </div>
+      {textBlocks.map((block) => (
+        <div key={block.title} className={styles.messageWrapper}>
+          <div className={styles.messageDot} />
+          <div className={styles.messageMain}>
+            <div className={styles.messageLabel}>{block.label}</div>
+            <div className={styles.messageTexts}>
+              <h2 className={styles.messageTitle}>{block.title}</h2>
+              <div className={styles.messageContent}>{block.content}</div>
+            </div>
           </div>
         </div>
-      </div>
-    ))}
+      ))}
     </>
   )
 }

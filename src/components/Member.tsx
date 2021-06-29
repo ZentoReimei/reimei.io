@@ -35,8 +35,14 @@ function Member({ Icon, name1, name2, old, links, description }: typeof MemberLi
     <div className={styles.memberCard}>
       <Icon className={styles.icon} />
       <div className="margin-top--md">
-        <div className={styles.name}>{name1}<br />{name2}</div>
-        <div className={styles.old}>/<span className={styles.small}>old</span> {old}</div>
+        <div className={styles.name}>
+          {name1}
+          <br />
+          {name2}
+        </div>
+        <div className={styles.old}>
+          /<span className={styles.small}>old</span> {old}
+        </div>
         <p className={styles.description}>{description}</p>
       </div>
       {links.map(({ to, icon, fill }) => (
@@ -54,10 +60,12 @@ const text = [
 export default function Members() {
   return (
     <section>
-      <h2 className={styles.memberTitle}>Webエンジニアが作った<br />政治団体「全都黎明」</h2>
-        <div className={styles.memberText}>
-          {text}
-        </div>
+      <h2 className={styles.memberTitle}>
+        Webエンジニアが作った
+        <br />
+        政治団体「全都黎明」
+      </h2>
+      <div className={styles.memberText}>{text}</div>
       <Link to="/docs/missionstatement" className={styles.statementLink}>
         全都黎明の綱領を見る
       </Link>
