@@ -31,12 +31,6 @@ module.exports = {
         src: 'img/logo.svg'
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'missionstatement',
-          position: 'left',
-          label: 'ドキュメント'
-        },
         // { to: '/blog', label: 'ブログ', position: 'left' },
         {
           href: 'https://github.com/ZentoReimei/reimei.io',
@@ -46,40 +40,6 @@ module.exports = {
       ]
     },
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'ドキュメント',
-              to: '/docs/missionstatement'
-            }
-          ]
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/ZentoReimei'
-            }
-          ]
-        },
-        {
-          title: 'More',
-          items: [
-            // {
-            //   label: 'ブログ',
-            //   to: '/blog'
-            // },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/ZentoReimei/reimei.io'
-            }
-          ]
-        }
-      ],
       copyright: `Copyright © ${new Date().getFullYear()} ZentoReimei.`
     },
     prism: {
