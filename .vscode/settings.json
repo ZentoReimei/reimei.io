@@ -1,7 +1,11 @@
 {
   "eslint.run": "onSave",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
-  }
+  },
+  "files.eol": "\n",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
